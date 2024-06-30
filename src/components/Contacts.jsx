@@ -39,9 +39,11 @@ export default function Contacts({ contacts, changeChat, setflag, flag }) {
               <img src={Logo} alt="logo" className="w-[40px] h-[40px]" />
               <h3 className="text-xl text-white ">SNOOPY</h3>
             </div>
-            <div className="block  pb-3 min-[550px]:hidden ">
-              <Logout></Logout>
-            </div>
+            {flag === 0 && (
+              <div className="block  pb-3 min-[550px]:hidden ">
+                <Logout></Logout>
+              </div>
+            )}
           </div>
           <div className="h-[calc(100%-100px)]  mx-3 flex flex-col items-start gap-4 pt-2 pb-2  overflow-y-scroll  ">
             <div className="w-[95%]">
