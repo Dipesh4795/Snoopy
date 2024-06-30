@@ -127,7 +127,7 @@ export default function ChatContainer({
       </div>
       <div className="h-[calc[100%-10px] w-[95%] pb-4 min-[550px]:px-[30px] min-[1000px]:px-50  px-[10px] pt-4 flex flex-col  gap-5  overflow-y-scroll">
         {/* <div className="w-[95%] "></div> */}
-        <div className="h-[100vw]"> </div>
+        <div className="h-[660px]"> </div>
         {messages.map((message) => {
           return (
             <div
