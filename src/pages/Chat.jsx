@@ -94,7 +94,7 @@ export default function Chat() {
             flag === 0 ? "w-screen block" : "hidden w-0 "
           } ${
             currentChat === undefined ? "w-full" : ""
-          }  min-[550px]:w-1/5 bg-gray-900 h-screen `}
+          }  min-[550px]:w-2/5 min-[1000px]:w-1/5 bg-gray-900 h-screen `}
         >
           <Contacts
             contacts={contacts}
