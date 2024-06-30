@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import Logo from "../assets/logo.svg";
+import Logout from "./Logout";
 
 export default function Contacts({ contacts, changeChat, setflag, flag }) {
   const [currentUserName, setCurrentUserName] = useState(undefined);
@@ -30,12 +31,17 @@ export default function Contacts({ contacts, changeChat, setflag, flag }) {
           } min-[550px]:w-full h-full  min-[550px]:border-r-blue-100   min-[550px]:border-[5px]`}
         >
           <div
-            className=" flex  h-fit gap-4 items-center w-full
+            className=" flex  h-fit gap-4 items-center ju w-full
           min-[550px]:border-b-white  min-[550px]:border-[5px] 
-           p-4 bg-richblack-900 justify-center font-bold "
+           p-4 bg-richblack-900 justify-between min-[550px]:justify-center font-bold "
           >
-            <img src={Logo} alt="logo" className="w-[40px] h-[40px]" />
-            <h3 className="text-xl text-white ">SNOOPY</h3>
+            <div className="flex gap-3 items-center">
+              <img src={Logo} alt="logo" className="w-[40px] h-[40px]" />
+              <h3 className="text-xl text-white ">SNOOPY</h3>
+            </div>
+            <div className="block  pb-3 min-[550px]:hidden ">
+              <Logout></Logout>
+            </div>
           </div>
           <div className="h-[calc(100%-100px)]  mx-3 flex flex-col items-start gap-4 pt-2 pb-2  overflow-y-scroll  ">
             <div className="w-[95%]">
