@@ -25,7 +25,7 @@ export default function Welcome() {
       </div>
       {/* </div> */}
       {/* <div className="hidden min-[550px]:block"> */}
-      <div className="absolute  flex flex-col items-center  top-[350px] md:top-[400px] pl-5">
+      <div className="absolute  flex flex-col items-center top-[420px] min-[1350px]:min-h-[700px] min-[1350px]:top-[480px] md:top-[440px] pl-5">
         <h1 className="text-white font-bold">
           Welcome,{" "}
           <span className="text-pink-500 font-extrabold pl-1 text-xl ">

@@ -37,7 +37,7 @@ export default function Contacts({ contacts, changeChat, setflag, flag }) {
             <img src={Logo} alt="logo" className="w-[40px] h-[40px]" />
             <h3 className="text-xl text-white ">SNOOPY</h3>
           </div>
-          <div className="h-[calc(100%-100px)]  mx-3 flex flex-col   items-center gap-2 pt-2 pb-2  overflow-y-scroll  ">
+          <div className="h-[calc(100%-100px)]  mx-3 flex flex-col items-start gap-4 pt-2 pb-2  overflow-y-scroll  ">
             <div className="w-[95%]">
               {contacts?.map((contact, index) => {
                 return (
@@ -45,9 +45,9 @@ export default function Contacts({ contacts, changeChat, setflag, flag }) {
                     key={contact._id}
                     className={` ${
                       index === currentSelected
-                        ? "bg-caribbeangreen-200 p-2 rounded-lg"
-                        : ""
-                    } flex gap-3 items-center justify-center rounded-lg  max-[550px]:bg-pink-900  max-[550px]:p-3`}
+                        ? "bg-caribbeangreen-200 p-2 my-1 rounded-lg"
+                        : " pb-5"
+                    } flex  h-fit gap-3 items-center justify-center min-[550px]:justify-start rounded-lg p-3 mb-4 min-[550px]:mb-0 max-[550px]:bg-pink-900  max-[550px]:p-3`}
                     onClick={() => {
                       changeCurrentChat(index, contact);
                       setflag(1);
